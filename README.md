@@ -1,5 +1,7 @@
 # hexo cookbook
 
+[![Build Status](https://travis-ci.org/alt3-cookbooks/hexo.svg)](https://travis-ci.org/alt3-cookbooks/hexo)
+
 Installs Hexo with optional demo blog.
 
 ##Requirements
