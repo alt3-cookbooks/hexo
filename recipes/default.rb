@@ -12,6 +12,13 @@ end
 # Exit recipe if we don't need to set up the demo
 return if node[:hexo][:install_demo] == false
 
+# Create /blogs directory if it does not exist
+directory "Blogs root" do
+  path node[:hexo][:blogs_root]
+  mode '0777'
+  action :create
+end
+
 # Initialize empty demo blog
 execute "Inititialize demo" do
   user 'vagrant'
