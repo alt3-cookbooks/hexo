@@ -2,53 +2,30 @@
 
 [![Build Status](https://travis-ci.org/alt3-cookbooks/hexo.svg)](https://travis-ci.org/alt3-cookbooks/hexo)
 
-Installs Hexo with optional demo blog.
+Installs Hexo with optional themed demo blog.
 
-##Requirements
+#Supported platforms
 
-### Cookbooks
+  - ubuntu-10.04
+  - ubuntu-12.04
+  - ubuntu-14.04
+  - centos-6.5
+  - centos-7.0
 
-- [nodejs ](https://github.com/redguide/nodejs)
+# Attributes
 
-##Attributes
+- `node[:hexo][:blogs_root]` - Path of root directory holding one or multiple hexo blogs.
+- `node[:hexo][:install_demo]` - Boolean for installing a themed demo.
+- `node[:hexo][:theme_git_url]` - URL to hexo theme repository (used by the demo)
+- `node[:hexo][:ip_address]` - IP address used by running `hexo server` in the demo directory
 
-<table>
-  <tr>
-    <td>Attribute</td>
-    <td>Description</td>
-    <td>Default</td>
-  </tr>
-  <tr>
-    <td><code>node[:hexo][:blogs_root]</code></td>
-    <td>Directory holding one or multiple hexo blogs.</td>
-    <td><em>/blogs</em></td>
-  </tr>
-  <tr>
-    <td><code>node[:hexo][:install_demo]</code></td>
-    <td>True to set up a working demo in /blogs/demo.</td>
-    <td><em>true</em></td>
-  </tr>  
-  <tr>
-    <td><code>node[:hexo][:theme_git_url]</code></td>
-    <td>URL to theme repository used by the demo.</td>
-    <td><em>https://github.com/hexojs/hexo-theme-light.git</em></td>
-  </tr> 
-  <tr>
-    <td><code>node[:hexo][:theme_git_url]</code></td>
-    <td>IP-address used by the demo when running `hexo server`</td>
-    <td><em>localhost</em></td>
-  </tr>
-</table>
+#Recipes
 
-##Recipes
+##hexo::default
 
-###hexo::default
+Installs hexo with optional themed demo blog.
 
-Installs hexo.
-
-Optionally installs and configures a working demo blog with theme in /blogs/demo.
-
-##Links:
+#Links:
 
 - http://hexo.io
 - [vagrant-hexo](https://github.com/alt3/vagrant-hexo) blog server
