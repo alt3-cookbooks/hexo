@@ -19,6 +19,6 @@ suites:
     run_list:
       - recipe[git]
       - recipe[nodejs]
-      - recipe[hexo::default]
+      - recipe[hexo]
 
     attributes:

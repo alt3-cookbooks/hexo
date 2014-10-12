@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/alt3-cookbooks/hexo.svg)](https://travis-ci.org/alt3-cookbooks/hexo)
 
-Installs Hexo with optional themed demo blog.
+Installs Hexo with themed demo blog.
 
 #Supported platforms
 
@@ -23,9 +23,9 @@ Installs Hexo with optional themed demo blog.
 
 ##hexo::default
 
-Installs hexo with optional themed demo blog.
+Installs hexo with themed demo blog.
 
 #Links:
 
 - http://hexo.io
-- [vagrant-hexo](https://github.com/alt3/vagrant-hexo) blog server
+- [vagrant-hexo](https://github.com/alt3/vagrant-hexo): hexo blog server with additional tooling (heroku-toolbelt etc.)
